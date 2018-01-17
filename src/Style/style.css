@@ -1,0 +1,174 @@
+*:focus { outline: none; }
+
+::selection { background: #fff; }
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url('../Font/CenturyGothic.ttf');
+}
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    font-family: CenturyGothic;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 5vh;
+}
+
+header {
+    cursor: default;
+    background-color: rgb(0, 0, 100);
+    color: white;
+    font-size: 7vh;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+header > button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+header > button > img {
+    width: 5vh;
+}
+
+.listItem {
+    border: 0.1vh solid rgba(0, 0, 100, 0.1);
+}
+
+.listItem:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 100, 0.1);
+}
+
+.listItem>div:nth-child(1) {
+    font-size: 3vh;
+    font-weight: bold;
+    width: 140vh;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.listItem>div:nth-child(2) {
+    background-color: rgb(0, 0, 100);
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 100%;
+}
+.listItem>div:nth-child(3) {
+    float: right;
+    font-size: 2vh;
+    width: 25vh;
+}
+
+.createItem>button:first-child {
+    float: left;
+}
+
+.createItem>div {
+    background-color: rgb(0, 0, 100);
+    color: white;
+    font-size: 7vh;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+.createItem>button:first-child, .createItem>div {
+    height: 7vh;
+    line-height: 7vh;
+    vertical-align: center;
+}
+.createItem>button:first-child>img {
+    width: 7vh;
+}
+.createItem>input {
+    font-size: 4vh;
+    float: left;
+    width: 167vh;
+}
+
+.createItem>button:last-child {
+    float: left;
+    width: 5vh;
+}
+
+.createItem>button:last-child>img {
+    width: 5vh;
+}
+
+.createItem>button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.item>button:first-child, .item>button:nth-child(3) {
+    height: 7vh;
+    line-height: 7vh;
+    vertical-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+.item>button:nth-child(3), .item>button:nth-child(5){
+    float: right;
+}
+
+.item>button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.item>button>img {
+    width: 7vh;
+}
+
+.item>input {
+    width: 155vh;
+    font-size: 5vh;
+}
+
+.item>div>div {
+    border: 0.1vh solid rgba(0, 0, 100, 0.1);
+    font-size: 3vh;
+}
+
+.item>div:nth-child(2) {
+    background-color: rgb(0, 0, 100);
+    color: white;
+    font-size: 7vh;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 100);
+    color: white;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+    cursor: pointer;
+}
